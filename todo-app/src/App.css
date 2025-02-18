@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 
-/* Todo App Container */
+/* Todo App Container */  
 .todo-app {
     width: 450px;
     min-height: 500px;
@@ -18,6 +18,8 @@ body {
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 0; /* Removes space at the top */
+    margin-bottom: 0; /* Removes space at the bottom */
 }
 
 /* Title */
@@ -46,6 +48,14 @@ h1 {
     color: white;
     outline: none;
     font-size: 16px;
+}
+
+.todo-app h2 {  
+    margin-bottom: 10px; /* Adjust as needed */  
+}  
+
+.todo-list {  
+    margin-top: 10px; /* Ensures some spacing between header and list */  
 }
 
 .todo-input::placeholder {
@@ -231,4 +241,24 @@ h1 {
     font-size: 16px;
     margin-top: 5px;
     opacity: 0.8;
+}
+
+.todo-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+}
+
+.todo-title {
+    background: #0080ff; /* Example background */
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px; /* Space between title and box */
 }

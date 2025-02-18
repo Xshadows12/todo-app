@@ -90,18 +90,21 @@ const TodoList = () => {
     };
 
     return (
-        <>
-            <Clock /> {/* Add the Clock component first */}
-            <h1>What's The Plan for Today?</h1>
-            <TodoForm onSubmit={addTodo} />
-            <Todo
-                todos={todos}
-                completeTodo={completeTodo}
-                removeTodo={removeTodo}
-                updateTodo={updateTodo}
-            />
-            {showModal && <Modal message={modalMessage} onClose={closeModal} />}
-        </>
+        <div className="todo-container">
+            <h2 className="todo-title">My To-Do List</h2> {/* Centered title outside the box */}
+            <div className="todo-app">
+                <Clock /> {/* Add the Clock component first */}
+                <h1>What's The Plan for Today?</h1>
+                <TodoForm onSubmit={addTodo} />
+                <Todo
+                    todos={todos}
+                    completeTodo={completeTodo}
+                    removeTodo={removeTodo}
+                    updateTodo={updateTodo}
+                />
+                {showModal && <Modal message={modalMessage} onClose={closeModal} />}
+            </div>
+        </div>
     );
 };
 
