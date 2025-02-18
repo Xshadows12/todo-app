@@ -40,7 +40,7 @@ ________________________________________
 ________________________________________
 📂 Installation & Usage
 
-1️⃣ Clone the Repository
+1️⃣ Create a Folder name it TODO-APP and Clone the Repository
 
 git clone https://github.com/Xshadows12/todo-app.git
 
